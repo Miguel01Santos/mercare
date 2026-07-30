@@ -1,0 +1,13 @@
+<button
+  type="button"
+  class="ui-button"
+  [class.ui-button--outline]="theme === 'outline'"
+  [class.ui-button--filled]="theme === 'filled'"
+  [class.ui-button--small]="size === 'small'"
+  [class.ui-button--medium]="size === 'medium'"
+  [class.ui-button--large]="size === 'large'"
+  [disabled]="disabled"
+  (click)="handleClick()"
+>
+  {{ text }}
+</button>
